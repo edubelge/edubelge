@@ -1,0 +1,274 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #c0dfe4;
+    font-family: 'Poppins';
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+}
+
+.conteneur_logo_header {
+    margin-left: 1%;
+}
+
+#tchat_whatsapp img {
+    padding: 10px;
+    width: 213px;
+    height: 48px;
+}
+
+.call_whatsapp:hover {
+    transform: scale(1.2);
+}
+
+.conteneur_flag .enabled:hover {
+    transform: scale(1.2);
+}
+
+.conteneur_flag .disabled:hover {
+    transform: scale(0.8);
+}
+
+.conteneur_flag .disabled {
+    filter: grayscale(1);
+}
+
+nav {
+    margin-right: 1%;
+    padding-top: 6px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 7px;
+}
+
+.flag {
+    width: 40px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#conteneur_main {
+    background-image: url("../assets/lancé_chapeaux_diplome_back.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#main {
+    max-width: 1200;
+    margin: auto;
+}
+
+h2 {
+    color: #36135D;
+    font-family: 'Poppins SemiBold';
+    font-size: 2em;
+}
+
+p {
+    text-align: justify;
+}
+
+#banniere img{
+    width: 100%;
+    margin: auto;
+}
+
+#intro {
+    margin: 22px;
+}
+
+.context_etape {
+    margin: 20px;
+    padding: 10px;
+}
+
+.context_etape ul {
+    padding-inline-start: 40px;
+    list-style-image: url("../assets/square-academic24x24rota45.png");
+}
+
+.img_etape {
+    box-shadow: -7px 7px 31px #003361;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+.tel, .mail {
+    width: 22px;
+    height: 22px;
+}
+
+@media screen and (max-width: 425px) {
+    #tchat_whatsapp img {
+        width: 160px;
+        height: 36;
+    }
+
+    #main {
+        padding-top: 80px;
+        padding-bottom: 200px;
+    }
+
+    #conteneur_main {
+        background-image: url("../assets/lancé_chapeaux_diplome_back.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .illustration_etape {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+    .img_etape {
+        max-width: 100%;
+    }
+
+    footer {
+        margin-bottom: 42px;
+    }
+
+    #conteneur_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .block_footer {
+        margin-top: 42px;
+    }
+}
+
+
+@media screen and (min-width: 426px) and (max-width:810px) {
+    #tchat_whatsapp img {
+        width: 160px;
+        height: 36;
+    }
+
+    #main {
+        padding-top: 80px;
+        padding-bottom: 370px;
+    }
+
+    .conteneur_etape {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .img_etape {
+        max-width: 100%;
+    }
+
+    #conteneur_main {
+        background-image: url("../assets/lancé_chapeaux_diplome_back.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .illustration_etape {
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+
+    footer {
+        margin-bottom: 42px;
+    }
+
+    #conteneur_footer {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+    .block_footer {
+        margin-top: 42px;
+    }
+}
+
+@media screen and (min-width: 811px) {
+
+    header {
+        width: 100%;
+    }
+
+    #main {
+        padding-top: 85px;
+        max-width: 1200px;
+        padding-bottom: 900px;
+    }
+
+    .conteneur_etape {
+        display: flex;
+        margin: auto;
+        align-items: center;
+        margin-top: 92px;
+    }
+
+    .conteneur_etape:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .context_etape {
+        font-size: 1.5em;
+        flex: 3;
+        margin-top: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .context_etape p {
+        margin-bottom: 22px;
+    }
+
+    .illustration_etape {
+        flex: 2;
+    }
+
+    .img_etape {
+        width: 460px;
+    }
+
+    footer {
+        margin-bottom: 42px;
+    }
+
+    #conteneur_footer {
+        display: flex;
+        justify-content: space-around;
+        max-width: 1200;
+        margin: auto;
+    }
+
+    .block_footer {
+        margin-top: 42px;
+    }
+}
